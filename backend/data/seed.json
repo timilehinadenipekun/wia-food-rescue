@@ -1,0 +1,795 @@
+{
+  "_note": "Demo data shaped like the team DB schema (one list per table). Org names are fictional; coordinates are approximate points in Downtown / Old Strathcona Edmonton. Quantities are crates. food_type_safe_hours are placeholders - verify against the AHS donated-food guide.",
+  "demo_date": "2026-11-13",
+  "food_type_safe_hours": {
+    "bakery": 24,
+    "pantry": 168,
+    "produce": 24,
+    "dairy": 12,
+    "cooked": 4,
+    "meat": 24
+  },
+  "organization": [
+    {
+      "id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "name": "Downtown Shelter",
+      "role": "receiver",
+      "address": "10235 101 St NW",
+      "latitude": 53.5444,
+      "longitude": -113.4859,
+      "accepted_food_types": [],
+      "storage_types": [
+        "ambient",
+        "chilled",
+        "frozen"
+      ],
+      "requires_confirmation": false,
+      "receiving_notes": "Ring bell at side door",
+      "available_capacity": 20
+    },
+    {
+      "id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "name": "Southside Food Bank",
+      "role": "receiver",
+      "address": "8210 104 St NW",
+      "latitude": 53.5162,
+      "longitude": -113.4952,
+      "accepted_food_types": [],
+      "storage_types": [
+        "ambient",
+        "chilled",
+        "frozen"
+      ],
+      "requires_confirmation": true,
+      "receiving_notes": "Loading dock at back",
+      "available_capacity": 50
+    },
+    {
+      "id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "name": "River Valley Community Kitchen",
+      "role": "receiver",
+      "address": "9520 100 Ave NW",
+      "latitude": 53.539,
+      "longitude": -113.474,
+      "accepted_food_types": [
+        "bakery",
+        "pantry"
+      ],
+      "storage_types": [
+        "ambient"
+      ],
+      "requires_confirmation": false,
+      "receiving_notes": "",
+      "available_capacity": 12
+    },
+    {
+      "id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "name": "Whyte Youth Drop-in",
+      "role": "receiver",
+      "address": "10330 82 Ave NW",
+      "latitude": 53.5181,
+      "longitude": -113.5011,
+      "accepted_food_types": [],
+      "storage_types": [
+        "ambient",
+        "chilled"
+      ],
+      "requires_confirmation": false,
+      "receiving_notes": "Ask for the shift lead",
+      "available_capacity": 3
+    },
+    {
+      "id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "name": "McCauley Family Centre",
+      "role": "receiver",
+      "address": "9600 107 Ave NW",
+      "latitude": 53.553,
+      "longitude": -113.489,
+      "accepted_food_types": [],
+      "storage_types": [
+        "ambient",
+        "chilled",
+        "frozen"
+      ],
+      "requires_confirmation": true,
+      "receiving_notes": "",
+      "available_capacity": 15
+    },
+    {
+      "id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "name": "Strathcona Seniors Hub",
+      "role": "receiver",
+      "address": "10140 84 Ave NW",
+      "latitude": 53.52,
+      "longitude": -113.488,
+      "accepted_food_types": [
+        "bakery",
+        "produce",
+        "dairy",
+        "cooked"
+      ],
+      "storage_types": [
+        "ambient",
+        "chilled"
+      ],
+      "requires_confirmation": false,
+      "receiving_notes": "No deliveries after 9pm",
+      "available_capacity": 6
+    },
+    {
+      "id": "b8a855c9-8849-5a6e-9f54-d4f9ed901553",
+      "name": "Whyte Ave Bakery",
+      "role": "donor",
+      "address": "10350 82 Ave NW",
+      "latitude": 53.5184,
+      "longitude": -113.4978,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "9d09a6a6-d1f5-5069-9def-aba69bc2feaa",
+      "name": "Gateway Bistro",
+      "role": "donor",
+      "address": "10450 82 Ave NW",
+      "latitude": 53.517,
+      "longitude": -113.4935,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "2d49b8bc-9923-51cb-8ded-d7fc5f09a181",
+      "name": "Jasper Ave Deli",
+      "role": "donor",
+      "address": "11010 Jasper Ave NW",
+      "latitude": 53.5418,
+      "longitude": -113.506,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "501de4e6-aeb4-57d0-a5e1-1f6ece14fcb2",
+      "name": "Ice District Grill",
+      "role": "donor",
+      "address": "10200 104 Ave NW",
+      "latitude": 53.547,
+      "longitude": -113.497,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "59b1cb7d-7cf4-5a4c-85fb-e904a083d8cb",
+      "name": "Strathcona Market Grocer",
+      "role": "donor",
+      "address": "10310 83 Ave NW",
+      "latitude": 53.5195,
+      "longitude": -113.49,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "ea78a3bc-54e9-509e-a6aa-f5ee04348747",
+      "name": "104 Street Café",
+      "role": "donor",
+      "address": "10150 104 St NW",
+      "latitude": 53.5432,
+      "longitude": -113.4985,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "5955b0c4-f311-5dbd-b000-8d62ae75ff47",
+      "name": "Old Scona Pizza Co.",
+      "role": "donor",
+      "address": "10520 82 Ave NW",
+      "latitude": 53.5175,
+      "longitude": -113.504,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "376d2215-6df7-50bb-b8a5-e5f327260584",
+      "name": "Downtown Catering Kitchen",
+      "role": "donor",
+      "address": "10050 102 St NW",
+      "latitude": 53.54,
+      "longitude": -113.492,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "c1c05ea8-702c-5564-b61c-79fd9f518cd1",
+      "name": "Garneau Sushi Bar",
+      "role": "donor",
+      "address": "10920 87 Ave NW",
+      "latitude": 53.5205,
+      "longitude": -113.512,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    },
+    {
+      "id": "1100d89e-a4ed-5311-93c6-1cbbad85216f",
+      "name": "Chinatown Noodle House",
+      "role": "donor",
+      "address": "10620 97 St NW",
+      "latitude": 53.549,
+      "longitude": -113.488,
+      "accepted_food_types": null,
+      "storage_types": null,
+      "requires_confirmation": null,
+      "receiving_notes": null,
+      "available_capacity": null
+    }
+  ],
+  "receiving_window": [
+    {
+      "id": "cbe1906d-8f76-5a2a-b0ab-b12b363d6253",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 1,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "a4debf4b-69ca-51d8-9ee1-97691d19db5e",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 2,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "c25642c1-817b-5ff7-83a8-4bbce6a6d71c",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 3,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "082b7066-43b9-5dfc-b172-27cc078c3a1e",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 4,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "898fd355-d6f6-5f0a-8083-e87bd9e38d16",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 5,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "2e9e40d8-02df-59e4-9616-1b874919d435",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 6,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "271514db-4628-5f26-932b-ca8fd3742562",
+      "organisation_id": "456fbfac-e3e9-5a98-a01f-7e866362a8e8",
+      "day": 7,
+      "start_time": "07:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "1ba385a3-fa9c-5a4c-b7b4-82522ea859b4",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 1,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "2c0235fd-b469-52d9-bdbb-9d97d995954d",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 2,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "80e9de5c-c9dc-57af-833b-005e80f8e74b",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 3,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "67cf0db6-63de-5c6d-9745-f6cc30b4e33d",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 4,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "a84505d5-1b91-516c-b6f1-0ffdedec5dbe",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 5,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "0dd59036-e162-5492-85d2-7f2a51780e7d",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 6,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "2b442e86-d433-5b2b-b914-2c638c6f6612",
+      "organisation_id": "8f0448cd-af22-5897-8810-29796b1cd5c8",
+      "day": 7,
+      "start_time": "09:00",
+      "end_time": "17:00"
+    },
+    {
+      "id": "051ed2a2-53d5-53c0-b86c-8fd19a9a0792",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 1,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "8ec3c0a6-7989-5602-bfbe-6d3fc745669f",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 2,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "f38121d2-1fe5-5545-b878-c7c5500406e4",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 3,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "21c29da8-d009-5173-b855-a2cc058d5c84",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 4,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "30c3f9fe-87c6-54e3-94f8-79356b62c7c6",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 5,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "a0549ef8-e63f-5cb5-ab6e-eaa0b465ae67",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 6,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "0ffd4db6-8566-5772-b08e-dc612db0f8f7",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 7,
+      "start_time": "08:00",
+      "end_time": "14:00"
+    },
+    {
+      "id": "23302c09-60d9-5fe3-bf0d-5b663cead00d",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 1,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "a56c52d9-1d84-5b6b-8fba-6616e490f9ee",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 2,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "a85fc0c7-bca5-5fda-9752-2fcb796b65e0",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 3,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "034459bf-1713-582c-8e27-8634b23b4811",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 4,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "68a5ca2a-bfd8-5104-b0fb-317a5800d38e",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 5,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "52f57f36-891e-5765-b256-044819c70fd1",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 6,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "7be9bb39-d161-56d1-a1f6-33993678ea63",
+      "organisation_id": "c04ff831-5018-5442-9c44-d008bb63e84e",
+      "day": 7,
+      "start_time": "16:00",
+      "end_time": "22:00"
+    },
+    {
+      "id": "a619588e-3b19-55dd-aa61-144b096b22f1",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 1,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "15972eb5-9d02-5989-a28c-6234144fd9de",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 2,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "ce5ce37a-8f00-560d-bc8e-7d4a59ee9c66",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 3,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "828b3c66-f339-54b5-8d95-e51056cd9db8",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 4,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "2546d903-e2af-5e98-b1b5-43fe3232c7f1",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 5,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "cc9bf07d-42d3-5429-ab0b-7c3c29cb07b8",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 6,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "6cd9660f-4df6-588c-a17c-0d1dea916039",
+      "organisation_id": "7a2bf511-592a-5d46-9c09-01b026ab7a77",
+      "day": 7,
+      "start_time": "12:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "0ba845d8-62e3-5250-8128-7a1f4c4cc5ab",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 1,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "90116857-56a0-54e6-a5c5-934f931758f8",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 2,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "27a00e63-d939-57fa-a510-e95db8328d01",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 3,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "f9c61e97-770b-57a7-90b9-a7f7404ccee9",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 4,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "17763676-7634-526f-9f6a-8921a76ad505",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 5,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "b46b111e-19d0-5565-8a6f-fc87ee9fc248",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 6,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "d425fecc-9d02-5262-a647-31f6704c66c0",
+      "organisation_id": "d38c9a0b-dd2a-5fa9-aec1-5368f46d2429",
+      "day": 7,
+      "start_time": "08:00",
+      "end_time": "20:00"
+    },
+    {
+      "id": "43d9f13c-addc-5554-8f59-acaf3955c702",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 1,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "94c8c18d-5c43-5d06-8ede-cde084c10d70",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 2,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "f7e46f3f-3ce3-5fb5-aa71-54ff57fc1c57",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 3,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "46e38b74-48cd-5f9b-90eb-f66021b23408",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 4,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "a23dad1b-cbb9-5a80-bbff-fe71a68dcc5a",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 5,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "2b8e10ba-642b-58ef-ab6e-95e19cbf83fc",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 6,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "9bcf1603-a64e-5728-a698-942d6c0444d1",
+      "organisation_id": "d30a83cb-e585-5585-b060-a6ed75ef73ae",
+      "day": 7,
+      "start_time": "10:00",
+      "end_time": "21:00"
+    }
+  ],
+  "volunteer": [
+    {
+      "id": "88211a7d-fc79-52cf-9e63-3797567e3d42",
+      "name": "Alex P.",
+      "vehicle_type": [
+        "SUV"
+      ],
+      "vehicle_capacity": 12,
+      "cooler_capacity": 8,
+      "latitude": 53.53,
+      "longitude": -113.5
+    },
+    {
+      "id": "858b88de-bc92-542e-a0f6-86bd1bad0efd",
+      "name": "Sam K.",
+      "vehicle_type": [
+        "Sedan"
+      ],
+      "vehicle_capacity": 6,
+      "cooler_capacity": 0,
+      "latitude": 53.545,
+      "longitude": -113.495
+    },
+    {
+      "id": "a269afec-98ee-51d6-a31c-9b0d64d6eb35",
+      "name": "Priya N.",
+      "vehicle_type": [
+        "Minivan"
+      ],
+      "vehicle_capacity": 15,
+      "cooler_capacity": 8,
+      "latitude": 53.518,
+      "longitude": -113.505
+    },
+    {
+      "id": "baa80df0-bd88-5500-8bf1-79759654a7ba",
+      "name": "Jordan T.",
+      "vehicle_type": [
+        "Sedan"
+      ],
+      "vehicle_capacity": 6,
+      "cooler_capacity": 4,
+      "latitude": 53.522,
+      "longitude": -113.489
+    },
+    {
+      "id": "f14b51e1-1adc-58e8-8ed6-e3e73708315a",
+      "name": "Mei L.",
+      "vehicle_type": [
+        "Minivan"
+      ],
+      "vehicle_capacity": 15,
+      "cooler_capacity": 10,
+      "latitude": 53.55,
+      "longitude": -113.51
+    },
+    {
+      "id": "a7632c85-efbd-596f-970f-de183702422c",
+      "name": "Chris O.",
+      "vehicle_type": [
+        "Hatchback"
+      ],
+      "vehicle_capacity": 4,
+      "cooler_capacity": 0,
+      "latitude": 53.538,
+      "longitude": -113.48
+    },
+    {
+      "id": "b588795d-978e-5e72-9df8-aca0acbe3c6a",
+      "name": "Fatima A.",
+      "vehicle_type": [
+        "SUV"
+      ],
+      "vehicle_capacity": 10,
+      "cooler_capacity": 6,
+      "latitude": 53.515,
+      "longitude": -113.499
+    },
+    {
+      "id": "a453a616-fb96-5dc8-a981-98ed6793fb5a",
+      "name": "Ben R.",
+      "vehicle_type": [
+        "Pickup truck"
+      ],
+      "vehicle_capacity": 20,
+      "cooler_capacity": 12,
+      "latitude": 53.542,
+      "longitude": -113.52
+    }
+  ],
+  "volunteer_availability": [
+    {
+      "id": "159dfc95-0d32-5c7a-b76b-ed474fbf2b01",
+      "volunteer_id": "88211a7d-fc79-52cf-9e63-3797567e3d42",
+      "day": 5,
+      "start_time": "18:00",
+      "end_time": "23:00"
+    },
+    {
+      "id": "c27b4290-7f98-5b49-bf52-310bca52cf09",
+      "volunteer_id": "858b88de-bc92-542e-a0f6-86bd1bad0efd",
+      "day": 5,
+      "start_time": "20:00",
+      "end_time": "22:30"
+    },
+    {
+      "id": "cb2d8ff0-c134-52b6-936c-55b8f43bdf2a",
+      "volunteer_id": "a269afec-98ee-51d6-a31c-9b0d64d6eb35",
+      "day": 5,
+      "start_time": "21:00",
+      "end_time": "21:30"
+    },
+    {
+      "id": "5a79aa28-0d8b-5cf3-b882-57d5d71c43dc",
+      "volunteer_id": "baa80df0-bd88-5500-8bf1-79759654a7ba",
+      "day": 5,
+      "start_time": "19:00",
+      "end_time": "23:30"
+    },
+    {
+      "id": "bd19be08-3a6a-5ef5-bd88-7c3e157bf4cd",
+      "volunteer_id": "f14b51e1-1adc-58e8-8ed6-e3e73708315a",
+      "day": 5,
+      "start_time": "17:00",
+      "end_time": "21:00"
+    },
+    {
+      "id": "c5a6200f-0e1b-59cc-bfc9-fe7cda5d01a8",
+      "volunteer_id": "a7632c85-efbd-596f-970f-de183702422c",
+      "day": 5,
+      "start_time": "20:30",
+      "end_time": "23:59"
+    },
+    {
+      "id": "2d7c3326-d163-5d3e-9df8-f0932d7a2d2b",
+      "volunteer_id": "b588795d-978e-5e72-9df8-aca0acbe3c6a",
+      "day": 5,
+      "start_time": "18:30",
+      "end_time": "22:00"
+    },
+    {
+      "id": "826a4a8f-b21f-59a6-b1e4-bf8b0823d1dd",
+      "volunteer_id": "a453a616-fb96-5dc8-a981-98ed6793fb5a",
+      "day": 5,
+      "start_time": "21:00",
+      "end_time": "23:59"
+    }
+  ],
+  "donation": [
+    {
+      "id": "bbf523e9-0392-5d0b-bdf8-0f8538dd5834",
+      "donor_id": "b8a855c9-8849-5a6e-9f54-d4f9ed901553",
+      "description": "Unsold bread and pastries",
+      "food_type": "bakery",
+      "count": 4,
+      "storage_required": "ambient",
+      "ready_at": "2026-11-13T21:00",
+      "pickup_deadline": "2026-11-13T22:30"
+    },
+    {
+      "id": "6bc2681f-8c35-5095-ae0b-45c7cae1f2f9",
+      "donor_id": "376d2215-6df7-50bb-b8a5-e5f327260584",
+      "description": "Trays from a cancelled catering order",
+      "food_type": "cooked",
+      "count": 6,
+      "storage_required": "chilled",
+      "ready_at": "2026-11-13T21:00",
+      "pickup_deadline": "2026-11-13T21:45"
+    },
+    {
+      "id": "ab6e5995-76f2-55f6-bead-840da9b527f5",
+      "donor_id": "59b1cb7d-7cf4-5a4c-85fb-e904a083d8cb",
+      "description": "Bruised but edible produce",
+      "food_type": "produce",
+      "count": 8,
+      "storage_required": "chilled",
+      "ready_at": "2026-11-13T20:30",
+      "pickup_deadline": "2026-11-13T22:00"
+    },
+    {
+      "id": "19ad1b92-85ec-5d47-aa4d-1803cea87358",
+      "donor_id": "501de4e6-aeb4-57d0-a5e1-1f6ece14fcb2",
+      "description": "Frozen burger patties and buns",
+      "food_type": "meat",
+      "count": 3,
+      "storage_required": "frozen",
+      "ready_at": "2026-11-13T21:15",
+      "pickup_deadline": "2026-11-13T22:15"
+    },
+    {
+      "id": "4a6945cc-e78d-5138-bcc7-cf73152e6877",
+      "donor_id": "ea78a3bc-54e9-509e-a6aa-f5ee04348747",
+      "description": "Milk and yogurt near best-before",
+      "food_type": "dairy",
+      "count": 2,
+      "storage_required": "chilled",
+      "ready_at": "2026-11-13T21:30",
+      "pickup_deadline": "2026-11-13T22:30"
+    }
+  ]
+}
